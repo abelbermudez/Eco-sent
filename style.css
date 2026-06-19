@@ -1713,10 +1713,50 @@ font-size:24px;
 }
 
 }
+/* ========================= */
+/* FOOTER (FONDO OSCURO) */
+/* ========================= */
+footer {
+  background: #0b132b; /* Azul muy oscuro o negro azulado */
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
 
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content h3 {
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-content p {
+  font-size: 16px;
+  color: #cbd5e1; /* Gris claro para los textos secundarios */
+  margin: 0;
+}
 /* ========================= */
 /* RESPONSIVE MÓVILES PEQUEÑOS */
 /* ========================= */
+
 @media(max-width:480px){
 
   .hero h2{
