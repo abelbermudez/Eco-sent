@@ -1176,87 +1176,44 @@ line-height:1.8;
 }
 
 /* ========================= */
-/* CONTACTO */
+/* REDES SOCIALES EN CONTACTO */
 /* ========================= */
 
-#contacto{
-
-padding:100px 0;
-
-background:#f8fafc;
-
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px; /* Separa los iconos del botón de WhatsApp */
 }
 
-.contact-box{
-
-max-width:900px;
-
-margin:auto;
-
-padding:60px;
-
-border-radius:30px;
-
-background:
-linear-gradient(
-135deg,
-#0f766e,
-#14b8a6
-);
-
-text-align:center;
-
-color:white;
-
-box-shadow:
-0 10px 25px rgba(0,0,0,.12);
-
+.contact-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s, filter 0.3s;
 }
 
-.contact-box h2{
-
-font-size:46px;
-
-margin-bottom:25px;
-
+/* Colores corporativos */
+.icon-tiktok {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.contact-box p{
-
-font-size:18px;
-
-margin-bottom:15px;
-
+.icon-facebook {
+  background: #1877F2;
 }
 
-.whatsapp-btn{
-
-display:inline-block;
-
-margin-top:25px;
-
-padding:16px 35px;
-
-background:white;
-
-color:#0f766e;
-
-text-decoration:none;
-
-font-weight:700;
-
-border-radius:12px;
-
-transition:.3s;
-
-}
-
-.whatsapp-btn:hover{
-
-transform:translateY(-3px);
-
-background:#f1f5f9;
-
+/* Animación sutil al pasar el mouse */
+.contact-icon:hover {
+  transform: translateY(-4px) scale(1.08);
+  filter: brightness(1.15);
 }
 
 /* ========================= */
