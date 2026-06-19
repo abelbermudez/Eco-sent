@@ -1519,77 +1519,79 @@ transform:translateY(-3px);
 }
 
 /* ========================= */
-/* WHATSAPP FLOTANTE */
+/* REDES SOCIALES FLOTANTES */
 /* ========================= */
 
-.floating-whatsapp{
-
-position:fixed;
-
-right:25px;
-
-bottom:25px;
-
-width:75px;
-
-height:75px;
-
-background:#25D366;
-
-border-radius:50%;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-color:white;
-
-font-size:38px;
-
-text-decoration:none;
-
-box-shadow:
-0 8px 20px rgba(0,0,0,.25);
-
-z-index:999;
-
-transition:.3s;
-
-animation:pulse 2s infinite;
-
+.social-floating-container {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los botones */
+  z-index: 999;
 }
 
-.floating-whatsapp:hover{
-
-transform:scale(1.12);
-
+.floating-btn {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+  transition: .3s;
 }
 
-@keyframes pulse{
-
-0%{
-
-box-shadow:
-0 0 0 0 rgba(37,211,102,.7);
-
+.floating-btn:hover {
+  transform: scale(1.12) translateY(-3px);
 }
 
-70%{
-
-box-shadow:
-0 0 0 20px rgba(37,211,102,0);
-
+/* Color corporativo de WhatsApp */
+.floating-whatsapp {
+  background: #25D366;
+  animation: pulseSocial 2s infinite;
 }
 
-100%{
-
-box-shadow:
-0 0 0 0 rgba(37,211,102,0);
-
+/* Color corporativo de Facebook */
+.floating-facebook {
+  background: #1877F2;
 }
 
+/* Color corporativo de TikTok */
+.floating-tiktok {
+  background: #000000;
+  border: 1px solid #ffffff20;
+}
+
+/* Animación de pulso (ahora aplicada al botón de WhatsApp) */
+@keyframes pulseSocial {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37,211,102,.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37,211,102,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37,211,102,0);
+  }
+}
+
+/* Adaptación para pantallas de celular */
+@media(max-width: 768px) {
+  .social-floating-container {
+    right: 15px;
+    bottom: 15px;
+    gap: 10px;
+  }
+  .floating-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+  }
 }
 
 /* ========================= */
